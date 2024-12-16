@@ -1,0 +1,60 @@
+header{
+  background-color: azure;
+  color:brown
+
+  border-color:black;
+  border-width:50;
+  border-style:outset;
+
+  padding:10;
+  margin:10;
+}
+
+body{
+    background-color: bisque;
+    color:brown;
+    padding: 50;
+    margin: 50;
+}
+
+main{
+  background-color: aquamarine;
+  padding: 50;
+  margin: 50;
+
+  border-color: black;
+  border-bottom: 50;
+}
+
+
+.playwrite-pt-guides-regular {
+    font-family: "Playwrite PT Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.center{
+  text-align: center;
+}
+
+.atTheTop{
+  font-size: 26px;
+  font-weight:900;
+  color:blueviolet;
+}
+
+  .block {
+    display:block;
+  }
+
+  .connection{
+    font-weight: bold;
+  }
+
+  div {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+/* Before the closing </head> tag, insert a <link> element with a rel attribute of "stylesheet" and an href attribute that specifies the relative path to your CSS file (i.e. css/index.css) */
