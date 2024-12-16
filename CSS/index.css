@@ -2,10 +2,6 @@ header{
   background-color: azure;
   color:brown
 
-  border-color:black;
-  border-width:50;
-  border-style:outset;
-
   padding:10;
   margin:10;
 }
@@ -17,13 +13,20 @@ body{
     margin: 50;
 }
 
+img{
+  border-color: black;
+  border-width: 30px;
+  border-style:groove
+}
+
 main{
   background-color: aquamarine;
   padding: 50;
   margin: 50;
 
   border-color: black;
-  border-bottom: 50;
+  border-bottom: 5;
+  border-style:inset;
 }
 
 
