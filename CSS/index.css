@@ -1,6 +1,6 @@
 header{
   background-color: azure;
-  color:brown
+  color:brown;
 
   padding:10px;
   margin:10px;
@@ -15,8 +15,8 @@ body{
 
 img{
   border-color: black;
-  border-width: 30px;
-  border-style:groove
+  border-width: 8px;
+  border-style: groove;
 }
 
 main{
@@ -43,18 +43,18 @@ section {
 
 #Experience{
   font-size: 26px;
-  font-weight:900px;
+  font-weight:900;
   text-align: left;
 
   border-color: black;
   border-width: 2px;
-  border-style:solid
+  border-style: solid;
 }
 
 
 
   .bold{
-    font-weight: bold;
+    font-weight: 400;
   }
 
   div {
@@ -67,7 +67,7 @@ section {
 
 .playwrite-pt-guides-regular {
   font-family: "Playwrite PT Guides", cursive;
-  font-weight: 400px;
+  font-weight: 400;
   font-style: normal;
 }
 /* Before the closing </head> tag, insert a <link> element with a rel attribute of "stylesheet" and an href attribute that specifies the relative path to your CSS file (i.e. css/index.css) */
