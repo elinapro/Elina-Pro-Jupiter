@@ -1,57 +1,60 @@
 header{
   background-color: azure;
-  color:brown
+  color:brown;
 
-  padding:10;
-  margin:10;
+  padding:10px;
+  margin:10px;
 }
 
 body{
     background-color: bisque;
     color:brown;
-    padding: 50;
-    margin: 50;
+    padding: 50px;
+    margin: 50px;
 }
 
 img{
   border-color: black;
-  border-width: 30px;
-  border-style:groove
+  border-width: 8px;
+  border-style: groove;
 }
 
 main{
   background-color: aquamarine;
-  padding: 50;
-  margin: 50;
+  padding: 50px;
+  margin: 50px;
 
   border-color: black;
-  border-bottom: 5;
-  border-style:inset;
+  border-bottom: 10px;
+  border-style: inset;
 }
 
 
-.playwrite-pt-guides-regular {
-    font-family: "Playwrite PT Guides", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
+section { 
+  padding: 1%;
+  margin: 1%;
+  text-align: center;
+}
+
 
 .center{
   text-align: center;
 }
 
-.atTheTop{
+#Experience{
   font-size: 26px;
   font-weight:900;
-  color:blueviolet;
+  text-align: left;
+
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
 }
 
-  .block {
-    display:block;
-  }
 
-  .connection{
-    font-weight: bold;
+
+  .bold{
+    font-weight: 400;
   }
 
   div {
@@ -60,4 +63,11 @@ main{
     padding-bottom: 30px;
     padding-left: 30px;
   }
+
+
+.playwrite-pt-guides-regular {
+  font-family: "Playwrite PT Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 /* Before the closing </head> tag, insert a <link> element with a rel attribute of "stylesheet" and an href attribute that specifies the relative path to your CSS file (i.e. css/index.css) */
