@@ -36,10 +36,16 @@ section {
   text-align: center;
 }
 
+h3{
+  font-size: 14pt;
+  font-weight: 200px;
+}
+
 
 .center{
   text-align: center;
 }
+
 
 #Experience{
   font-size: 26px;
@@ -51,23 +57,105 @@ section {
   border-style: solid;
 }
 
-
-
   .bold{
     font-weight: 400;
   }
 
-  div {
-    padding-top: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-  }
 
 
 .playwrite-pt-guides-regular {
   font-family: "Playwrite PT Guides", cursive;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
+  font-size: 30pt;
 }
+
+nav{
+  display: absolute;
+  position:sticky;
+  top: 0%;
+}
+
+.container{
+  border: 3px solid #190666;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: flex-start;
+}
+
+.nav-element{
+  padding: 5px;
+  margin: 0px;
+  color:azure;
+}
+
+.nav-element > a{
+  text-decoration: none;
+  color:azure;
+}
+
+.background-color{
+  background-color: rgb(182, 85, 80);
+}
+
+.vertical-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.tpm{
+
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  margin: 5px 10px;
+  padding: 5px 10px;
+  font-size: 12pt;
+}
+
+
+.Connect{
+  border: 5px dashed #4c1408;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.dates{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .resume{
+  display: flex;
+  flex-direction: row;
+} */
+
+/* 
+.About {
+  flex: 1;
+}
+.Experience{
+  flex: 1;
+}
+.Skills{
+  flex: 1;
+}
+.Projects{
+  flex: 1;
+}
+.Connect{
+  flex: 1;
+} */
+
+
+
+
+
 /* Before the closing </head> tag, insert a <link> element with a rel attribute of "stylesheet" and an href attribute that specifies the relative path to your CSS file (i.e. css/index.css) */
