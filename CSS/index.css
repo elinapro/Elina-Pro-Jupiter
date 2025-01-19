@@ -1,10 +1,6 @@
-header{
-  background-color: azure;
-  color:brown;
 
-  padding:10px;
-  margin:10px;
-}
+
+
 
 body{
     background-color: bisque;
@@ -19,8 +15,13 @@ img{
   border-style: groove;
 }
 
+.icon{
+  width: 50px;
+  height: 50px;
+}
+
 main{
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   padding: 50px;
   margin: 50px;
 
@@ -72,17 +73,9 @@ h3{
 
 nav{
   display: absolute;
-  position:sticky;
+  position: sticky;
+  background-color: rgb(182, 85, 80);
   top: 0%;
-}
-
-.container{
-  border: 3px solid #190666;
-  display: flex;
-  height: 100%;
-  flex-direction: row;
-  justify-content: space-around;
-  align-self: flex-start;
 }
 
 .nav-element{
@@ -91,14 +84,22 @@ nav{
   color:azure;
 }
 
+.nav-container{
+  border: 3px solid #190666;
+  display: flex;
+  /* height: 100%; */
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: flex-start;
+}
+
+
+
 .nav-element > a{
   text-decoration: none;
   color:azure;
 }
 
-.background-color{
-  background-color: rgb(182, 85, 80);
-}
 
 .vertical-container{
   display: flex;
@@ -154,8 +155,79 @@ nav{
   flex: 1;
 } */
 
+/* I will be designing this site desktop-first.
+This is my settings for an ipad*/
 
+@media (max-width: 1000px) {
+  nav{
+    background-color: rgb(42, 153, 209);
+    font-size: 12;
+    flex-direction: column;
+  }
 
+  .nav-container{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+    padding: 5% 10%;
+  }
 
+  h2{
+    font-size: 12;
+    color: rgb(42, 153, 209) ;
+  }
+
+  body{
+    margin: 2px;
+    padding: 1px;
+  }
+
+  img{
+    max-width: 50%;
+    height: auto;
+  }
+
+  .tpm{
+    font-size: 10pt;
+  }
+
+  
+
+}
+
+/* This is my mobile settings for an iphone*/
+
+@media (max-width: 500px) {
+  nav{
+    background-color: rgb(10, 144, 21);
+  }
+
+  .nav-container{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3%;
+    padding: 5%;
+  }
+
+  h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(10, 144, 21) ;
+  }
+  body{
+    margin: 3px;
+    padding: 3px;
+    font-weight: 100;
+  }
+  img{
+    max-width: 50%;
+    height: auto;
+  }
+
+  .tpm{
+    font-size: 10pt;
+  }
+}
 
 /* Before the closing </head> tag, insert a <link> element with a rel attribute of "stylesheet" and an href attribute that specifies the relative path to your CSS file (i.e. css/index.css) */
