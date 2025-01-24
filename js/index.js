@@ -30,10 +30,12 @@ for (i = 0; i < skills.length; i++) {
   skillsList.appendChild(skill);
 }
 
-const messageForm = document.querySelector('input[name="leave_message"]');
-document.getElementById("submit_btn").addEventListener("click", myFunction);
+const messageForm = document.querySelector('form[name="leave_message"]');
+// document.getElementById("submit_btn").addEventListener("click", myFunction);
+messageForm.addEventListener("submit", myFunction);
 
-function myFunction(){
+function myFunction(event){
+    event.preventDefault(); // Prevent form submission
     const userName = event.target.usersName
     const email = event.target.usersEmail
     const message = event.target.usersMessage
