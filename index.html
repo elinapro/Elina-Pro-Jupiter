@@ -19,6 +19,7 @@
         <div class="nav-element"><a href="#Skills">Skills</a></div>
         <div class="nav-element"><a href="#Projects">Projects</a></div>
         <div class="nav-element"><a href="#Connect">Connect</a></div>
+        <div class="nav-element"><a href="#Message">Message</a></div>
     </nav>
 
     <div id="pageContent">
@@ -145,5 +146,32 @@
 
     <script src="js/index.js"></script>
 </body>
+
+<section id="Message">
+<h2> Leave a Message</h2>
+<form name="leave_message">
+<label>Name</label>
+<input type="text" name="usersName" required="true">
+<br>
+<label>E-mail</label>
+<input type="email" name="usersEmail" required="true">
+<br>
+<label>Message</label>
+<textarea name="usersMessage" required="true"></textarea>
+<br>
+<button id="submit_btn" type="submit">Submit</button>
+
+</form>
+
+<section id="messages">
+    <h2>Messages</h2>
+    <ul></ul>
+</section>
+
+
+
+</section>
+
+<footer></footer>
 
 </html>
