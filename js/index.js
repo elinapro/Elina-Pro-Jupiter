@@ -30,14 +30,30 @@ for (i = 0; i < skills.length; i++) {
   skillsList.appendChild(skill);
 }
 
-const messageForm = document.querySelector('form[name="leave_message"]');
-// document.getElementById("submit_btn").addEventListener("click", myFunction);
-messageForm.addEventListener("submit", myFunction);
+// const messageForm = document.querySelector('form[name="leave_message"]');
+// // document.getElementById("submit_btn").addEventListener("click", myFunction);
+// messageForm.addEventListener("submit", myFunction);
 
-function myFunction(event){
+// function myFunction(event){
+//     event.preventDefault(); // Prevent form submission
+//     const userName = event.target.usersName.value;
+//     const email = event.target.usersEmail.value;
+//     const message = event.target.usersMessage.value;
+//     console.log(userName, email, message);
+
+// }
+
+
+const messageForm = document.querySelector("#leave_message");
+// document.getElementById("submit_btn").addEventListener("click", myFunction);
+messageForm.addEventListener("submit", (event) => {
     event.preventDefault(); // Prevent form submission
-    const userName = event.target.usersName
-    const email = event.target.usersEmail
-    const message = event.target.usersMessage
+    let userName = event.target.usersName.value;
+    let email = event.target.usersEmail.value;
+    let message = event.target.usersMessage.value;
     console.log(userName, email, message);
-}
+
+    let messageSection = document.getElementById("#messages");
+    let messageList = messageSection.getElementById("ul")
+    document.getElementById("leave_message").requestFullscreen();
+});
