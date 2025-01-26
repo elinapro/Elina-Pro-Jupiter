@@ -148,6 +148,33 @@ nav{
   width: 300px;
 }
 
+#Message>form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#messages>ul>li{
+
+}
+
+#Message>form>input, #Message>form>textarea{
+  width: 60%;
+
+}
+
+button{
+  font-style: bold;
+  border-radius: 1px;
+}
+
+button:hover{
+  background-color: aqua;
+  font-size: large;
+}
+
+
 footer{
   text-align: center;
 }
