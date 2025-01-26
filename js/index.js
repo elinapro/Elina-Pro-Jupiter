@@ -12,7 +12,7 @@ const today = new Date();
 const year = today.getFullYear();
 
 const copyright = document.createElement("p");
-copyright.innerHTML = `<span> &#169; ${year} Elina<\span>`;
+copyright.innerHTML = `<span> &#169; ${year} Elina</span>`;
 footer.appendChild(copyright);
 
 console.log(copyright);
