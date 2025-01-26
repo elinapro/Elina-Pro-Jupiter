@@ -44,7 +44,7 @@ for (i = 0; i < skills.length; i++) {
 // }
 
 
-const messageForm = document.getElementsByName("message_form")[0];
+const messageForm = document.getElementsByName("leave_message")[0];
 console.log(messageForm);
 // document.getElementById("submit_btn").addEventListener("click", myFunction);
 messageForm.addEventListener("submit", (event) => {
