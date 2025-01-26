@@ -49,10 +49,10 @@ console.log(messageForm);
 // document.getElementById("submit_btn").addEventListener("click", myFunction);
 messageForm.addEventListener("submit", (event) => {
     event.preventDefault(); // Prevent form submission
-    let userName = event.target.usersName.value;
+    let name = event.target.usersName.value;
     let email = event.target.usersEmail.value;
     let message = event.target.usersMessage.value;
-    console.log(userName, email, message);
+    console.log(name, email, message);
     messageForm.reset();
 
 
@@ -64,7 +64,7 @@ messageForm.addEventListener("submit", (event) => {
     // document.getElementById("leave_message").requestFullscreen();
 
     let newMessage = document.createElement("li");
-    newMessage.innerHTML = `<a href= 'mailto: ${email} '>${userName} </a> <br /> <span>${message} </span>`
+    newMessage.innerHTML = `<a href= 'mailto: ${email} '>${name} </a> <br /> <span>${message} </span>`
 
     let removeButton = document.createElement("button");
     removeButton.innerText= "Remove";
