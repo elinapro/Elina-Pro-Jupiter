@@ -155,9 +155,7 @@ nav{
   align-items: center;
 }
 
-#messages>ul>li{
-
-}
+list-style: none;
 
 #Message>form>input, #Message>form>textarea{
   width: 60%;
