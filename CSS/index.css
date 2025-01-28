@@ -144,7 +144,14 @@ nav{
 }
 
 #Skills{
-  width: 300px;
+  width: 100px;
+}
+
+#skills> li{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
 }
 
 #Message>form{
@@ -176,27 +183,20 @@ footer{
   text-align: center;
 }
 
-/* .resume{
+#projects>ul{
   display: flex;
-  flex-direction: row;
-} */
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 100vw;
+  justify-content: center;
+}
 
-/* 
-.About {
-  flex: 1;
+#projects>li{
+  background-color: rgb(215, 230, 230);
+  padding: 2px;
+  border: 1px solid darkblue;
+  border-radius: 1px;
 }
-.Experience{
-  flex: 1;
-}
-.Skills{
-  flex: 1;
-}
-.Projects{
-  flex: 1;
-}
-.Connect{
-  flex: 1;
-} */
 
 /* I will be designing this site desktop-first.
 This is my settings for an ipad*/
