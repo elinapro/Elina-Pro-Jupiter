@@ -93,9 +93,6 @@ console.log("projectSection: ", projectSection);
 
 const projectsList = projectSection.querySelector("ul");
 
-
-
-
 //Fetching the Github projects from the API
 
 fetch("https://api.github.com/users/elinapro/repos")
@@ -103,11 +100,15 @@ fetch("https://api.github.com/users/elinapro/repos")
     return response.json(); //the response from Github
   })
   .then((repositories) => {
-    console.log("repositories: ", repositories) //pass in a string and then the variable itself
-// loop through the reposities array
-    for(let i= 0; i < repositories.length; i++){
+    console.log("repositories: ", repositories); //pass in a string and then the variable itself
+    // loop through the reposities array
+    for (let i = 0; i < repositories.length; i++) {
       //get specific project data
       const project = repositories[i].name;
+      //to hide a project
+      if (project === "yahtzee") {
+        continue;
+      }
       //create the DOM (HTML) elements
       const li = document.createElement("li");
       //put the data from the project into the DOM element(li)
@@ -117,7 +118,6 @@ fetch("https://api.github.com/users/elinapro/repos")
       projectsList.appendChild(li);
     }
   })
-  .catch((error) =>{
+  .catch((error) => {
     console.log(error); //add error message to DOM
   });
-

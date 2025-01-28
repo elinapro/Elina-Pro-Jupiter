@@ -1,26 +1,22 @@
-
-
-
-
-body{
-    background-color: bisque;
-    color:brown;
-    padding: 50px;
-    margin: 50px;
+body {
+  background-color: bisque;
+  color: brown;
+  padding: 50px;
+  margin: 50px;
 }
 
-img{
+img {
   border-color: black;
   border-width: 8px;
   border-style: groove;
 }
 
-.icon{
+.icon {
   width: 50px;
   height: 50px;
 }
 
-main{
+main {
   /* background-color: aquamarine; */
   padding: 50px;
   margin: 50px;
@@ -30,37 +26,35 @@ main{
   border-style: inset;
 }
 
-
-section { 
+section {
   padding: 1%;
   margin: 1%;
   text-align: center;
 }
 
-h3{
+h3 {
   font-size: 14pt;
   font-weight: 200px;
 }
 
-
-.center{
+.center {
   text-align: center;
 }
 
-#pageContent{
+#pageContent {
   border: 1px solid orange;
 }
 
-#info{
+#info {
   border: 1px solid rgb(231, 63, 91);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#Experience{
+#Experience {
   font-size: 26px;
-  font-weight:900;
+  font-weight: 900;
   text-align: left;
 
   border-color: black;
@@ -68,11 +62,9 @@ h3{
   border-style: solid;
 }
 
-  .bold{
-    font-weight: 400;
-  }
-
-
+.bold {
+  font-weight: 400;
+}
 
 .playwrite-pt-guides-regular {
   font-family: "Playwrite PT Guides", cursive;
@@ -81,20 +73,20 @@ h3{
   font-size: 30pt;
 }
 
-nav{
+nav {
   display: absolute;
   position: sticky;
   background-color: rgb(182, 85, 80);
   top: 0%;
 }
 
-.nav-element{
+.nav-element {
   padding: 5px;
   margin: 0px;
-  color:azure;
+  color: azure;
 }
 
-.nav-container{
+.nav-container {
   border: 3px solid #190666;
   display: flex;
   /* height: 100%; */
@@ -103,112 +95,114 @@ nav{
   align-self: flex-start;
 }
 
-
-
-.nav-element > a{
+.nav-element > a {
   text-decoration: none;
-  color:azure;
+  color: azure;
 }
 
-
-.vertical-container{
+.vertical-container {
   display: flex;
   flex-direction: column;
 }
 
-.tpm{
+.tpm {
   display: flex;
   flex-direction: column;
-  justify-content:flex-end;
+  justify-content: flex-end;
   margin: 5px 10px;
   padding: 5px 10px;
   font-size: 12pt;
 }
 
-
-.Connect{
+.Connect {
   border: 3px dashed #4c1408;
   display: flex;
   flex-direction: row;
-  padding: 30px;
+  padding: 10px;
   height: 100%;
   width: 100%;
   justify-content: space-around;
 }
 
-.dates{
-  display:flex;
+.dates {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-#Skills{
-  width: 100px;
-}
-
-#skills> li{
+#skillsList li {
+  list-style: none;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(168, 41, 41);
+  padding: 10px;
+  border-radius: 20px;
+  gap: 1px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: stretch;
+  justify-content: space-around;
 }
 
-#Message>form{
+#Message > form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-/* list-style: none; */
-
-#Message>form>input, #Message>form>textarea{
+#Message > form > input,
+#Message > form > textarea {
   width: 60%;
-
 }
 
-button{
+button {
   font-style: bold;
   border-radius: 1px;
 }
 
-button:hover{
+button:hover {
   background-color: aqua;
   font-size: large;
 }
 
-
-footer{
+footer {
   text-align: center;
 }
 
-#projects>ul{
+#projects ul {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   max-width: 100vw;
   justify-content: center;
+  border: 2px solid greenyellow;
 }
 
-#projects>li{
-  background-color: rgb(215, 230, 230);
-  padding: 2px;
-  border: 1px solid darkblue;
-  border-radius: 1px;
+#projects li {
+  background-color: rgb(238, 245, 245);
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+#projects li:hover {
+  border-radius: 50px;
+  font-weight: bold;
 }
 
 /* I will be designing this site desktop-first.
 This is my settings for an ipad*/
 
 @media (max-width: 1000px) {
-  nav{
+  nav {
     background-color: rgb(42, 153, 209);
     font-size: 12;
     flex-direction: column;
   }
 
-  .nav-container{
+  .nav-container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -216,37 +210,34 @@ This is my settings for an ipad*/
     padding: 5% 10%;
   }
 
-  h2{
+  h2 {
     font-size: 12;
-    color: rgb(42, 153, 209) ;
+    color: rgb(42, 153, 209);
   }
 
-  body{
+  body {
     margin: 2px;
     padding: 1px;
   }
 
-  img{
+  img {
     max-width: 50%;
     height: auto;
   }
 
-  .tpm{
+  .tpm {
     font-size: 10pt;
   }
-
-  
-
 }
 
 /* This is my mobile settings for an iphone*/
 
 @media (max-width: 500px) {
-  nav{
+  nav {
     background-color: rgb(10, 144, 21);
   }
 
-  .nav-container{
+  .nav-container {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -254,21 +245,21 @@ This is my settings for an ipad*/
     padding: 5%;
   }
 
-  h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(10, 144, 21) ;
+  h2 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: rgb(10, 144, 21);
   }
-  body{
+  body {
     margin: 3px;
     padding: 3px;
     font-weight: 100;
   }
-  img{
+  img {
     max-width: 50%;
     height: auto;
   }
 
-  .tpm{
+  .tpm {
     font-size: 10pt;
   }
 }
