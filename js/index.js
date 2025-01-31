@@ -102,9 +102,7 @@ fetch("https://api.github.com/users/elinapro/repos")
   })
   .then((repositories) => {
     console.log("repositories: ", repositories); //pass in a string and then the variable itself
-  }).catch((error) => {
-    console.log(error); // added error catching
-  });
+
     // loop through the reposities array
     for (let i = 0; i < repositories.length; i++) {
       //get specific project data
@@ -120,7 +118,8 @@ fetch("https://api.github.com/users/elinapro/repos")
       //<li>Jupiter</li>
       //Any list items would be listed
       projectsList.appendChild(li);
-    })
+    }
+  })
   .catch((error) => {
     console.log(error); //add error message to DOM
   });
