@@ -152,13 +152,15 @@ nav {
   align-items: center;
   border: 1px solid rgb(0, 0, 0);
   padding: 10px;
+  margin: 1px;
 }
 
 #leaveMessage > form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
+  padding: 10px;
+  margin: 1px;
   max-width: 70%;
 }
 
@@ -168,6 +170,8 @@ nav {
   justify-content: space-around;
   align-items: left;
   border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  margin: 1px;
 }
 
 #messages > ul {
@@ -249,10 +253,14 @@ This is my settings for an ipad*/
 
   #leaveMessage{
     max-width: 70%;
+    padding: 10px;
+    margin: 1px;
   }
 
   #messages{
     max-width: 70%;
+    padding: 10px;
+    margin: 1px;
   }
 }
 
@@ -291,10 +299,14 @@ This is my settings for an ipad*/
 
   #leaveMessage{
     max-width: 30%;
+    padding: 10px;
+    margin: 1px;
   }
 
   #messages{
     max-width: 30%;
+    padding: 10px;
+    margin: 1px;
   }
 }
 }

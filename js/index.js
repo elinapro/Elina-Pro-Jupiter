@@ -101,6 +101,9 @@ fetch("https://api.github.com/users/elinapro/repos")
   })
   .then((repositories) => {
     console.log("repositories: ", repositories); //pass in a string and then the variable itself
+  }).catch((error) => {
+    console.log(error); // added error catching
+  });
     // loop through the reposities array
     for (let i = 0; i < repositories.length; i++) {
       //get specific project data
