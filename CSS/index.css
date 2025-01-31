@@ -170,7 +170,7 @@ nav {
   border: 1px solid rgb(0, 0, 0);
 }
 
-#messages > ol {
+#messages > ul {
   padding: 0px;
   margin: 10px;
 }

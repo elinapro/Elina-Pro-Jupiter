@@ -58,13 +58,13 @@ messageForm.addEventListener("submit", (event) => {
 
   let messageSection = document.getElementById("messages");
   console.log(messageSection);
-  let messageList = messageSection.getElementsByTagName("ol")[0];
+  let messageList = messageSection.getElementsByTagName("ul")[0];
   console.log(messageList);
   // messageSection.hidden = true;
   // document.getElementById("leave_message").requestFullscreen();
 
   // Creating a new message
-  let newMessage = document.createElement("ol");
+  let newMessage = document.createElement("ul");
   newMessage.innerHTML = `<a href= 'mailto: ${email} '>${name} </a> <br /> <span>${message} </span>`;
 
   // Adding the remove button
