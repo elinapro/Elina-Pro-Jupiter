@@ -246,6 +246,14 @@ This is my settings for an ipad*/
   .tpm {
     font-size: 10pt;
   }
+
+  #leaveMessage{
+    max-width: 70%;
+  }
+
+  #messages{
+    max-width: 70%;
+  }
 }
 
 /* This is my mobile settings for an iphone*/
@@ -280,6 +288,15 @@ This is my settings for an ipad*/
   .tpm {
     font-size: 10pt;
   }
+
+  #leaveMessage{
+    max-width: 30%;
+  }
+
+  #messages{
+    max-width: 30%;
+  }
+}
 }
 
 /* Before the closing </head> tag, insert a <link> element with a rel attribute of "stylesheet" and an href attribute that specifies the relative path to your CSS file (i.e. css/index.css) */
