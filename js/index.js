@@ -92,6 +92,7 @@ const projectSection = document.getElementById("projects");
 console.log("projectSection: ", projectSection);
 
 const projectsList = projectSection.querySelector("ul");
+console.log("projectsList: ", projectsList);
 
 //Fetching the Github projects from the API
 
@@ -119,8 +120,7 @@ fetch("https://api.github.com/users/elinapro/repos")
       //<li>Jupiter</li>
       //Any list items would be listed
       projectsList.appendChild(li);
-    }
-  })
+    })
   .catch((error) => {
     console.log(error); //add error message to DOM
   });
