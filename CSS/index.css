@@ -115,13 +115,14 @@ nav {
 }
 
 .Connect {
-  border: 3px dashed #4c1408;
+  border: 1px dashed #000000;
   display: flex;
   flex-direction: row;
   padding: 10px;
   height: 100%;
   width: 100%;
   justify-content: space-around;
+  align-items: center;
 }
 
 .dates {
@@ -132,28 +133,46 @@ nav {
 }
 
 #skillsList li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   list-style: none;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(168, 41, 41);
   padding: 10px;
   border-radius: 20px;
   gap: 1px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
-#Message > form {
+#leaveMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+}
+
+#leaveMessage > form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+
+  max-width: 70%;
 }
 
-#Message > form > input,
-#Message > form > textarea {
-  width: 60%;
+#messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+#messages > ol {
+  padding: 0px;
+  margin: 10px;
 }
 
 button {

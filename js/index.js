@@ -58,13 +58,13 @@ messageForm.addEventListener("submit", (event) => {
 
   let messageSection = document.getElementById("messages");
   console.log(messageSection);
-  let messageList = messageSection.getElementsByTagName("ul")[0];
+  let messageList = messageSection.getElementsByTagName("ol")[0];
   console.log(messageList);
-  messageSection.hidden = true;
+  // messageSection.hidden = true;
   // document.getElementById("leave_message").requestFullscreen();
 
   // Creating a new message
-  let newMessage = document.createElement("li");
+  let newMessage = document.createElement("ol");
   newMessage.innerHTML = `<a href= 'mailto: ${email} '>${name} </a> <br /> <span>${message} </span>`;
 
   // Adding the remove button
@@ -81,7 +81,7 @@ messageForm.addEventListener("submit", (event) => {
   newMessage.appendChild(document.createElement("hr"));
   messageList.appendChild(newMessage);
   messageForm.reset();
-  messageSection.hidden = false;
+  // messageSection.hidden = false;
 });
 
 // Lesson -13 fetch
