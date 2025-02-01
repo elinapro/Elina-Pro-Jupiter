@@ -98,6 +98,9 @@ console.log("projectsList: ", projectsList);
 
 fetch("https://api.github.com/users/elinapro/repos")
   .then((response) => {
+    if (!response.ok) {
+      throw new Error("Request failed");
+    }
     return response.json(); //the response from Github
   })
   .then((repositories) => {
