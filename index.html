@@ -2,11 +2,24 @@
 <html>
   <head>
     <title>Elina Pro's Page</title>
-    <meta name="author" content="El Pro" />
-    <link rel="stylesheet" href="css/index.css" />
+    <meta
+      name="author"
+      content="El Pro"
+    />
+    <link
+      rel="stylesheet"
+      href="css/index.css"
+    />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Playwrite+PT+Guides&display=swap"
       rel="stylesheet"
@@ -20,8 +33,7 @@
       <div class="nav-element"><a href="#Skills">Skills</a></div>
       <div class="nav-element"><a href="#Projects">Projects</a></div>
       <div class="nav-element"><a href="#Connect">Connect</a></div>
-      <div class="nav-element"><a href="#Message">Leave a Message</a></div>
-
+      <div class="nav-element"><a href="#leaveMessage">Leave a Message</a></div>
     </nav>
 
     <div id="pageContent">
@@ -171,10 +183,10 @@
       <div id="info">
         <section id="Skills">
           <h2 class="playwrite-pt-guides-regular">Skills</h2>
-          <ul id="skillsList"></ul>
+          <div id="skillsList"></div>
         </section>
 
-        <section id="Projects">
+        <section id="projects">
           <h2 class="playwrite-pt-guides-regular">Projects</h2>
           <ul></ul>
         </section>
@@ -201,28 +213,44 @@
       </div>
     </div>
 
-    <section id="Message">
+    <section id="leaveMessage">
       <h2>Leave a Message</h2>
-      <form name="leave_message" id="leave_message">
+      <form
+        name="leave_message"
+        id="leave_message"
+      >
         <label>Name</label>
-        <input type="text" name="usersName" required="true" />
+        <input
+          type="text"
+          name="usersName"
+          required="true"
+        />
         <br />
         <label>E-mail</label>
-        <input type="email" name="usersEmail" required="true" />
+        <input
+          type="email"
+          name="usersEmail"
+          required="true"
+        />
         <br />
         <label>Message</label>
-        <textarea name="usersMessage" required="true"></textarea>
+        <textarea
+          name="usersMessage"
+          required="true"
+        ></textarea>
         <br />
-        <button id="submit_btn" type="submit">Submit</button>
+        <button
+          id="submit_btn"
+          type="submit"
+        >
+          Submit
+        </button>
       </form>
+    </section>
 
-      <section id="messages">
-        <h2>Messages</h2>
-        <ul></ul>
-      </section>
-
-    
-
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul></ul>
     </section>
 
     <script src="js/index.js"></script>
