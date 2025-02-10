@@ -44,6 +44,16 @@ for (i = 0; i < skills.length; i++) {
 // }
 
 // Creating the Message Form
+let messageSection = document.getElementById("messages");
+let messageList = messageSection.getElementsByTagName("ul")[0];
+
+function hideMessagesIfEmpty() {
+  if (messageList.childElementCount === 0) {
+    messageSection.classList.add("hidden");
+  }
+}
+
+hideMessagesIfEmpty();
 
 const messageForm = document.getElementsByName("leave_message")[0];
 console.log(messageForm);
@@ -56,13 +66,6 @@ messageForm.addEventListener("submit", (event) => {
   console.log(name, email, message);
   messageForm.reset();
 
-  let messageSection = document.getElementById("messages");
-  console.log(messageSection);
-  let messageList = messageSection.getElementsByTagName("ul")[0];
-  console.log(messageList);
-  // messageSection.hidden = true;
-  // document.getElementById("leave_message").requestFullscreen();
-
   // Creating a new message
   let newMessage = document.createElement("ul");
   newMessage.innerHTML = `<a href= 'mailto: ${email} '>${name} </a> <br /> <span>${message} </span>`;
@@ -74,6 +77,7 @@ messageForm.addEventListener("submit", (event) => {
   removeButton.addEventListener("click", (event) => {
     let entry = event.target.parentNode;
     entry.remove();
+    hideMessagesIfEmpty();
   });
 
   // adding a message to the list along with a remove button and a name
@@ -81,7 +85,7 @@ messageForm.addEventListener("submit", (event) => {
   newMessage.appendChild(document.createElement("hr"));
   messageList.appendChild(newMessage);
   messageForm.reset();
-  // messageSection.hidden = false;
+  messageSection.classList.remove("hidden");
 });
 
 // Lesson -13 fetch
