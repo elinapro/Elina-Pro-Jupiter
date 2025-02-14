@@ -30,19 +30,6 @@ for (i = 0; i < skills.length; i++) {
   skillsList.appendChild(skill);
 }
 
-// const messageForm = document.querySelector('form[name="leave_message"]');
-// // document.getElementById("submit_btn").addEventListener("click", myFunction);
-// messageForm.addEventListener("submit", myFunction);
-
-// function myFunction(event){
-//     event.preventDefault(); // Prevent form submission
-//     const userName = event.target.usersName.value;
-//     const email = event.target.usersEmail.value;
-//     const message = event.target.usersMessage.value;
-//     console.log(userName, email, message);
-
-// }
-
 // Creating the Message Form
 let messageSection = document.getElementById("messages");
 let messageList = messageSection.getElementsByTagName("ul")[0];
@@ -87,8 +74,6 @@ messageForm.addEventListener("submit", (event) => {
   messageForm.reset();
   messageSection.classList.remove("hidden");
 });
-
-// Lesson -13 fetch
 
 //projects list
 

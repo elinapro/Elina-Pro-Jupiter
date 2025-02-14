@@ -275,7 +275,7 @@ This is my settings for an ipad*/
   }
 
   .tpm {
-    font-size: 10pt;
+    font-size: 12pt;
   }
 
   /* #leaveMessage {
@@ -322,14 +322,8 @@ This is my settings for an ipad*/
   }
 
   .tpm {
-    font-size: 10pt;
+    font-size: 12pt;
   }
-
-  /* #leaveMessage {
-    max-width: 30%;
-    padding: 10px;
-    margin: 1px;
-  } */
 
   #messages {
     max-width: 30%;
